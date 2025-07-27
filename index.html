@@ -1,0 +1,345 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  
+  <style>
+       :root {
+        --text-color: #1a1c2b;
+        --link-color: #4a76ee;
+        --backround-color: #eeeff1;
+
+       }
+      * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      }
+       html {
+      scroll-behavior: smooth;
+      }
+     body{
+      font-family: "roboto", sans-serif ;
+      background-color: var(--#eeeff1) ;
+    }
+     a {
+      color: var(#4a76ee);
+      text-decoration: none;
+    }
+    /* navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50;
+      align-items: center;
+    }
+    .left{
+      margin-left: 15px;
+    }
+    .right {
+      margin-right: 13px;
+    }
+    .left a {
+      color: var(--text-color);
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .right a {
+      color: var(--text-color);
+      margin: 0 10px;
+    }
+    .right a span {
+      margin-left: 10px;
+    }
+   
+
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50;
+    margin: 50 0;
+    gap: 40px;
+    margin-bottom: 40px;
+
+  }
+  p {
+    
+    margin-left: 50px;
+    margin-top: 5px;
+  }
+  h2 {
+    margin-left: 40px;
+  }
+  .hero-section img  {
+    flex: 2;
+    border-radius:50%;
+    margin-top: 65px;
+    margin-left: 70px;
+    width: 70%;
+}
+.links {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.cells {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  gap: 20px;
+  padding: 10px 20px;
+  
+  }
+  h2 {
+    text-align: center;
+  }
+  .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  .headshot {
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  
+  .text {
+    
+    text-align: center;
+    padding: 5px 20px ;
+  }
+  .section-testimony {
+    margin-top: 100px;
+    padding: 0  50;
+    
+  }
+  .section-testimony h2 {
+  font-size: 35px;
+margin-right:90%;
+margin: 5 10;
+  }
+  .section-testimony img {
+    margin-left: 60px;
+    width: 200px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+  
+  }
+  .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .section-testimony .personal-details {
+    width: 20%;
+    margin-left: 20px;
+  }
+  p1 {
+    margin-bottom: 13px;
+  
+  }
+  section.contact {
+    padding: 0 50;
+    margin-bottom: 100px;
+  }
+  
+  h3 {
+    margin-left: 40px;
+    font-size: 35px;
+    margin-top: 60px;
+  }
+  .tx {
+    margin-left: 40px;
+    font-size: 15px;
+    margin-top: 5px;
+    width: 50%;
+    display: flex;
+    flex: 3;
+    
+ }
+
+
+.form {
+  margin-left: 40px;
+    margin-top: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    border-color:  6px blue; ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eeeff1;
+    
+}
+.Gr {
+  display: flex;
+  gap: 50px;
+}
+.form input , textarea {
+  flex-direction: column;
+  width: 600px;
+  
+  
+}
+
+
+    
+    @media (max-width:300px){
+      nav {
+        padding: 0 20;
+      }
+      .right a span {
+        display: none;   
+      }
+      nav .right a {
+        font-size: 22px; 
+      }
+      nav .right a :last-child {
+        color: var(--text-color)
+        var(--backround-color)transparent;
+        padding: 0;
+     }
+      
+    
+    
+     </style>
+  
+<title>Page Title</title>
+<link rel="stylsheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nabla&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+  <!-- section1 nav bar-->
+   <nav>
+    <div class="left">
+    <a href="/"> Shariif Law</a>
+    </div>
+      <div class="right">
+      
+    <a href="https://github.com/yourusername" target="_blank">
+  <i class="fab fa-github fa-2x"></i>
+    <span>Github</span></a>
+    <a href="mailto:shariiflaw180@gmail.com">
+   <i class="fa-regular fa-envelope-open"></i> <span>Email</span></a>
+    <a href="mailto:shariiflaw180@gmail.com">
+   <i class="fa-brands fa-linkedin"></i> <span>Linkin</span></a>
+    </div>
+  </nav>
+    <!-- section2 Hero-->
+     <section class="hero-section">
+      <div class="text">
+        <h2>Hi i'm Shariif Law</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\
+          when an unknown  printer took a galley of type and scrambled it to make a type specimen book.
+          It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum</p>
+          
+        
+          <div class="links">
+            <a href="#Skills">
+              <i class="fa-solid fa-code"></i><span>Skills</span> </a>
+               <a href="#Testimony">
+             <i class="fa-solid fa-pencil"></i> <span>Testimont</span> </a>
+             
+              <a href="#Contact">
+             <i class="fa-solid fa-envelope"></i><span>Testimont</span> </a>
+               </div>
+           </div>
+             <div class="headshot">
+        <img src="ss.jpg" alt="Shariif Law">
+       </div>
+         </section>
+        
+        
+     
+      <!-- section2 Skils-->
+     <section id="Skills"> <h2> Skills</h2>
+      <div class="text">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id mattis purus. Aliquam laoreet rhoncus nibh, sit amet molestie magna dignissim vel. Pellentesque id lorem erat. Vivamus ultrices facilisis eros eu tincidunt. In in tortor euismod, scelerisque sem eget, faucibus arcu. Curabitur libero elit, congue a ullamcorper sed, egestas id tortor. Donec eget ornare est. Pellentesque lacinia pharetra lacus ut vulputate. Donec dignissim ante velit, et condimentum erat mollis eget. Aenean varius imperdiet ipsum non pellentesque. Donec dignissim lorem vitae est rhoncus dapibus.
+       
+      </div>
+     
+      <div class="cells">
+        <div class="cell">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnVtaAspBwZIFytweTYNRyAxEf0P5ollNGbLRMYMFNIrbe9otu5kBLoU0&usqp=CAE&s" alt="java logo"> <span> Java Script</span>
+        </div>
+        <div class="cell">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW5ACDmtG4hgjdTNGHUC7eRqROM24raCo1VClfSQO5l8wx-8JUDtbI7Ms&usqp=CAE&s" alt="html logo"> <span> HTML</span>
+        </div>
+        <div class="cell">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4De4FDUf3mA7UlhMQKceVPOB4aei7E3lhY-jMbUkwBSGmQFZMXLzCQ-M&usqp=CAE&s" alt=" Css logo"> <span> CSS</span>
+       
+        </div>
+        <div class="cell">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdltz4VhLCdtnPz0tNI_4N6OgLJankrQUNaBDpU1apuYf45FqDRaOjHtI&usqp=CAE&s" alt="java logo"> <span> React.js</span>
+        </div>
+        <div class="cell">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPIqx6eXQYU8cnhUIljlorurQFR-bmBFCpMk28qWeUnuhBUT91e9dBKBY&usqp=CAE&s" alt="java logo"> <span> N.js</span>
+        </div>
+      </div>
+       </section>
+    
+        
+     
+      <!-- section3 testmonial-->
+     <section id="Testimony" class="section-testimony">
+     <h2>Testimony</h2>
+     <div class="group">
+     <div class="personal-details">
+     <img src="port.jpg">
+     <p1> Shariif Law</p1>
+     <p2> About Lorum Ausom</p2>
+     </div>
+     <div class="text21">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+     </div>
+     </div>
+     </section>
+      <!-- section4 Contact-->
+      <section id="Contact" class="Contact">
+      <h3> Contact</h3>
+      <div class="Gr">
+      <div class="tx">
+      
+        Sunt amicitias cum in contemni ut molestas verbis putant levandi modo sic qui quod etiam ut qui qui faciunt ut ii contingit in amicitias opinione amicitias non contingit rem sunt ob quidam extollere modo modo qui etiam debent rem qui ut opere debent sunt verbis submittere verbis hac sic hac.
+      </div>
+      <div class="form">
+      <form >
+      <label for="Name" id="Name">Name</label><br>
+      <input type="Name" id="Name" placeholder="Name"><br>
+      <label for="Email" id="Email">Email</label><br>
+      <input type="Email" id="Email" placeholder="Email"><br>
+      <textarea form="Message" cols="30" rows="15">
+      </textarea>
+    </form>
+      </div>
+      </div>
+     
+      </section>
+     
+     
+     
+
+
+
+  
+
+</body>
+</html>
+
+
+
+
